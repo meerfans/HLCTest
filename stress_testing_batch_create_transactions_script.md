@@ -8,7 +8,7 @@ $ ./script --network test --action generate-new-address
 ```   
 + start a `node` with modify some config up to machine config
 
-+ [mining](https://github.com/HLCTest/hlc-miner) 120 `blocks` for getting `coinbase` reward
++ [mining](https://github.com/hlcfans/HLCTest/tree/master/hlc-miner) 120 `blocks` for getting `coinbase` reward
 
 + run the command to cost target block for creating many signed transactions
 

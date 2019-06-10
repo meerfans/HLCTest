@@ -18,7 +18,7 @@ $ sudo apt-get install beignet-dev nvidia-cuda-dev nvidia-cuda-toolkit
     
 ### (2) Run
 
-- Download miner from the release [here](https://github.com/HLCTest/hlc-miner)
+- Download miner from the release [here](https://github.com/hlcfans/HLCTest/tree/master/hlc-miner)
 
 - Unzip the file
 
@@ -105,15 +105,15 @@ node.js enviroment (version >= 10)
 
 redis / mysql / nginx , recommend installing from docker
 
-hlc node (at least 1 node referring to https://github.com/HLCTest/master/README.md)
+hlc node (at least 1 node referring to https://github.com/hlcfans/HLCTest/blob/master/README.md)
 
 
 
 ## install
 
-### 1. download pool code
+### 1. download pool docker
 
-https://github.com/HLCTest/hlc-pool/
+https://github.com/hlcfans/HLCTest/tree/master/hlc-pool/
 
 ### 2. install node enviroment
 

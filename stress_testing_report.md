@@ -39,10 +39,10 @@ Software Configurations:
 4. Disk: Turxun 120 SSD
 
 ## Build Qitmeer-DAG Network
-How to quickly run the Qitmeer-DAG Network, see [here.](https://github.com/HalalChain/Nox-DAG-test/blob/master/README.md)
+How to quickly run the Qitmeer-DAG Network, see [here.](https://github.com/hlcfans/HLCTest/blob/master/README.md)
 
 ## Run miner
-How to quickly run a miner, see [here.](https://github.com/HalalChain/hlc-miner/blob/master/README.md)
+How to quickly run a miner, see [here.](https://github.com/hlcfans/HLCTest/blob/master/miner_and_mining_pool_manual.md)
 
 ## Test Step
 - Configure the test environment
@@ -62,7 +62,7 @@ The following parameters can be modified depending on your situation:
 - Mining to the send transaction account: 120 blocks, 3000 HLC
 - Create 30,000 signed RAW transactions through scripts and export them to CSV files
 
-[Create sign raw transaction hash script](https://github.com/HalalChain/Nox-DAG-test/blob/master/stress_testing_batch_create_transactions_script.md)
+[Create sign raw transaction hash script](https://github.com/hlcfans/HLCTest/blob/master/stress_testing_batch_create_transactions_script.md)
 - Configure the test client(JMeter), Key configuration parameters:
 
       Number of Threads (users): 500
