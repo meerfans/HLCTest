@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# coinbase height witch the account can spend
+
+start=$1
+end=$2
+network=$3
+
+echo "start block $start to $end on network:$network"
+echo "delete /tmp/tx*"
+
+rm -rf /tmp/tx*
+rm -rf txs.tar
+rm -rf /tmp/address*
+rm -rf address.tar
+
+for((i=$start;i<=$end;i++));
+do
+echo "cost the coinbase height $1"
+echo "./bench --faddress=(your address which has much money) --privkey=xxxxxx -s (your node rpc server) -u (your node rpc user) -P (your node rpc pass) --addressfile=/tmp/address.csv --txfile=/tmp/tx.csv --notls --network=$network --height=$i"
+./bench --faddress=(your address which has much money) --privkey=xxxxxx -s (your node rpc server) -u (your node rpc user) -P (your node rpc pass) --addressfile=/tmp/address.csv --txfile=/tmp/tx.csv --notls --network=$network --height=$i
+done
+
+echo "batch generate address and sign tx tar file"
+
+tar -cf address.tar /tmp/address*
+
+tar -cf txs.tar /tmp/tx*
