@@ -1,4 +1,4 @@
-#hlc-wallet command line tools
+# hlc-wallet command line tools
 ----
 ## Abstract
 Introduce how to use the wallet command line tools for address generation and trading operations
