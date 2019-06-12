@@ -38,8 +38,8 @@ Software Configurations:
 3. GPU: Sapphire RX580 8G
 4. Disk: Turxun 120 SSD
 
-## Build Qitmeer-DAG Network
-How to quickly run the Qitmeer-DAG Network, see [here.](https://github.com/hlcfans/HLCTest/blob/master/README.md)
+## Build HLC-DAG Network
+How to quickly run the HLC-DAG Network, see [here.](https://github.com/hlcfans/HLCTest/blob/master/README.md)
 
 ## Run miner
 How to quickly run a miner, see [here.](https://github.com/hlcfans/HLCTest/blob/master/miner_and_mining_pool_manual.md)
@@ -47,7 +47,7 @@ How to quickly run a miner, see [here.](https://github.com/hlcfans/HLCTest/blob/
 ## Test Step
 - Configure the test environment
 - Create accounts(addresses and private keys)
-- Run Qitmeer-DAG nodes
+- Run HLC-DAG nodes
 - Configurate miner<br>
 Configure the address of the sending transaction account to the mining address:<br> 
 ```asciidoc
