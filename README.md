@@ -19,6 +19,34 @@ Here's how to install it quickly.
 #### ***1.Install docker:***
 * First you have to make sure that you have docker installed on your machine.And make sure you are a member of the user group docker.If you're all right, you can ignore this and jump right into ***step 2***.
 
+* Install docker on ubuntu:
+```
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+```
+* If you are already a root user, you can ignore next step
+```
+# Add docker user group and add the logged-in user to the docker user group.
+
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
+docker ps
+```
+* You can use `docker -v` to test whether the installation is successful or not.
+Other systems platforms are similar.You can go [docker](https://www.docker.com/get-started)
+
 #### ***2.Deployment image:***
 * First we need to initialize the image, Of course, when you want the latest image, you can also use the following command.
 ```
@@ -256,33 +284,6 @@ docker run -it -p 18130:18130 -p 18131:18131 halalchain/nox-dag --addpeer=x.x.x.
 
 ## Remarks
 NOTE: make sure the server has at least 2GB memory
-### Install docker on ubuntu:
-```
-sudo apt-get update
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-sudo apt-get update
-sudo apt-get install docker-ce
-```
-* If you are already a root user, you can ignore next step
-```
-# Add docker user group and add the logged-in user to the docker user group.
-
-sudo groupadd docker
-sudo gpasswd -a $USER docker
-newgrp docker
-docker ps
-```
-* You can use `docker -v` to test whether the installation is successful or not.
-Other systems platforms are similar.You can go [docker](https://www.docker.com/get-started)
 
 ---
 
