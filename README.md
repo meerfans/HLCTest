@@ -57,6 +57,7 @@ docker pull halalchain/nox-dag
 ```
 docker run -it -p 18130:18130 -p 18131:18131 halalchain/nox-dag --miningaddr=[Your mining address] --addpeer=[peer1 IP:PORT] [--addpeer=[peer2 IP:PORT]]
 ```
+"mining address": you can use [hlc-wallet command line tools](https://github.com/hlcfans/HLCTest/tree/master/hlc-wallet) generate an address.
 
 ---
 
